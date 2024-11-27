@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>append vs appendChild</title>
+</head>
+<body>
+    <div id="container"></div>
+
+    <script>
+        const container = document.getElementById('container');
+
+        // Create elements
+        const newDiv = document.createElement('div');
+        newDiv.textContent = 'This is a new div.';
+
+        // Using append()
+        container.append('Hello, ', newDiv, ' world!');
+    </script>
+</body>
+</html>
